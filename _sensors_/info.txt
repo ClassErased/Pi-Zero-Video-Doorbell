@@ -1,0 +1,1 @@
+Here is the place for code relating to sensors, at this moment just PIR but the Pi leaves plenty of room to scale out. So long as its low power.

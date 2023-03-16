@@ -1,0 +1,3 @@
+Im still deciding whether to use python or C++ to handle signals
+
+https://github.com/milaq/rpi-rf/blob/master/rpi_rf/rpi_rf.py - It looks dead, PR's and Issues unanswered for years. But something to build on.
