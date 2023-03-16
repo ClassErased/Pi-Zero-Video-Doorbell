@@ -27,3 +27,5 @@ def capture_img():
 
 if __name__ == '__main__':
     print("hi my name is, my name is, ricka rucka slim shady")
+    #if motion_detected:
+        #capture_img()
