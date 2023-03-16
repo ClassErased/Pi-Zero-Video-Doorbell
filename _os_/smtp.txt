@@ -1,0 +1,6 @@
+An option but perhaps not the most universal, has it's use cases but also has it's drawbacks.
+    -Could we email the video? (Whats the real benefit to this?)
+    -Could we email a notification (maybe useful for packages, but that service already exists by couriers)
+
+sudo apt-get install ssmtp
+sudo apt-get install mailutils
