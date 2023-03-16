@@ -1,3 +1,4 @@
+from _camera_ import cam
 import smtplib
 import os
 from email import encoders
