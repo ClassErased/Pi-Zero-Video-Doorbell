@@ -20,7 +20,7 @@ def capture_img():
     if not os.path.exists(dir):
         os.makedirs(dir)
     
-    files = sorted(glob.glob(os.path.join(dir, prefix + '[0-9][0-9][0-9].jpg'))) # Returns a list of files that matches the path specified in the function argument
+    files = sorted(glob.glob(os.path.join(dir, prefix + '[0-9][0-9][0-9].jpg'))) # Returns a list of files that matches the path & prefix specified in the function argument
     
     count = 0
     if len(files) > 0:
