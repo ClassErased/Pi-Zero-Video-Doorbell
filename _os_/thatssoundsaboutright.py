@@ -1,4 +1,4 @@
-from _camera_ import cam
+from _os_.cam import motion_scanning, activity
 import smtplib
 import os
 from email import encoders
@@ -15,14 +15,6 @@ receiver = ""
 dir = "./doorbell/"  #Note to self: change this, by no means how this will be done but good enough for now. #Securing this folder is important, but dont use hardcoded passwords... obiviously.
 prefix = "video"
 
-motion_detected = False
-
-def motion_detect(activity):
-    if not activity == False:
-        print("motion detected")
-    else:
-        pass 
-
 def capture_img():
     if not os.path.exists(dir):
         os.makedirs(dir) #I trust you not to execute this somewhere dumb. #Note to self: maybe make it an input?
@@ -34,7 +26,18 @@ def capture_img():
     if len(files) > 0:
         count = int(files[-1][-7:-4])+1 # Use the last filename to initialize the count
 
+def motion_detect(activity) -> bool:
+    if not activity == False:
+        capture_img()
+        activity == False
+    else:
+        pass 
+
 if __name__ == '__main__':
     print("hi my name is, my name is, ricka rucka slim shady")
-    #if motion_detected:
-        #capture_img()
+    
+    #try:
+        #motion_scanning()
+    #except:
+
+    motion_detect(activity)

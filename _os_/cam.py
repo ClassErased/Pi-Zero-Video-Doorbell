@@ -12,9 +12,10 @@ doorbell = Button()
 activity = False
 
 def motion_scanning(sens):
-    #if motion_found:
-        #activity = True #note to self: handle this properly otherwise there's many potential issues.
-    print()
+    if sens == True:
+        activity == True #note to self: handle this properly otherwise there's many potential issues.
+    else:
+        activity == False
 
 #def motion_detect(activity):
     #if not activity == False:
