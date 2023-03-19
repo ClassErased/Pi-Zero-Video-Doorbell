@@ -19,3 +19,9 @@
 ##Port 22 -> Port 2222
 ##PermitRootLogin yes -> PermitRootLogin prohibit-password
 #service ssh restart
+
+
+#Removing traces of pi user from system
+#login to new account
+#sudo deluser pi
+#sudo deluser -remove-home pi
