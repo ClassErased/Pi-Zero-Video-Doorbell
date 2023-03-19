@@ -48,3 +48,4 @@ def button_press() -> bool:
 
 if __name__ == '__main__':
     print()
+    #GPIO.cleanup()
