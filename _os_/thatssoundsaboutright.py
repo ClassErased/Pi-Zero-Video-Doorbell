@@ -18,7 +18,7 @@ prefix = "video"
 def capture_img():
     if not os.path.exists(dir):
         os.makedirs(dir) #I trust you not to execute this somewhere dumb. #Note to self: maybe make it an input?
-        print(f'\n directory ', dir, ' not found',  '\ncreating ', dir, ' in current path\n') # added this to let user know the path has been created.
+        print(f'\n directory "{dir}" not found\ncreating "{dir}" in current path\n') # added this to let user know the path has been created.
     
     files = sorted(glob.glob(os.path.join(dir, prefix + '[0-9][0-9][0-9].jpg'))) # Returns a list of files that matches the path & prefix specified in the function argument
     
