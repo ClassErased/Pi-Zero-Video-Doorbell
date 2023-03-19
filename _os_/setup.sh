@@ -1,5 +1,4 @@
-#Will consist of any major chages to base OS
-#For example disabling Wireless and using other bare metal RF for communication
+#file for OS commands and operations
 
 #add wpa_supplicant.confg + ssh file to bootfs
 #POWER ON
@@ -12,7 +11,7 @@
 #sudo service ssh restart 
 
 #=====> !!!!!!REMEMBER TO UNDO PermitRootLogin CHANGES AFTER A PROPER USER ACCOUNT HAS BEEN CONFIGURED!!!!!! <======
-#Alternaitvely if you don't wish to use root you can use raspberry's sudo privs to setup a user account
+#Alternatively if you don't wish to use root you can use pi's sudo privs to setup a user account
 
 #login as root
 #adduser <params>/useradd <username> #Useradd is a perl script which uses the native adduser binary
@@ -29,3 +28,5 @@
 #login to new user account
 #sudo deluser pi
 #sudo deluser -remove-home pi
+#try su pi to confirm changes, also check filesystem if so inclined
+#POWER OFF - It's not "secure" but this deters opportunistic attacks (those from bots)
