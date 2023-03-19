@@ -1,3 +1,1 @@
-Here is the place for code relating to sensors, at this moment just PIR but the Pi leaves plenty of room to scale out. So long as its low power.
-
-However code to do with sensing can be found within ./_camera_/cam.py for the moment
+all in ./_os_/motioncam.py

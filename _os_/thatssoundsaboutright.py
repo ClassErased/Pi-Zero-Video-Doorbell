@@ -1,10 +1,10 @@
-from _os_.cam import motion_scanning, activity
-import smtplib
+from _os_.motioncam import motion_scanning, button_press #both bool
+#import smtplib
 import os
-from email import encoders
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
-from email.MIMEBase import MIMEBase
+#from email import encoders
+#from email.MIMEMultipart import MIMEMultipart
+#from email.MIMEText import MIMEText
+#from email.MIMEBase import MIMEBase
 from time import sleep
 import glob
 
@@ -26,18 +26,5 @@ def capture_img():
     if len(files) > 0:
         count = int(files[-1][-7:-4])+1 # Use the last filename to initialize the count
 
-def motion_detect(activity) -> bool:
-    if not activity == False:
-        capture_img()
-        activity == False
-    else:
-        pass 
-
 if __name__ == '__main__':
     print("hi my name is, my name is, ricka rucka slim shady")
-    
-    #try:
-        #motion_scanning()
-    #except:
-
-    motion_detect(activity)
