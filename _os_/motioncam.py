@@ -14,6 +14,7 @@ led = LED(27)
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(sens, GPIO.IN)
+GPIO.setup(doorbell, GPIO.IN)
 activity = False
 button = False
 
