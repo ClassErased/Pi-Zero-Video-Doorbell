@@ -33,6 +33,8 @@ def motion_scanning() -> bool:
 
     except KeyboardInterrupt:
         pass
+    finally:
+        GPIO.cleanup()
 
 #hey so you're gonna need to thread these ;) AND the code to handle communication
 #but if a piezo or other sound method is added it can be added to each function
@@ -49,7 +51,9 @@ def button_press() -> bool:
                 led.off()
     except KeyboardInterrupt:
         pass
+    finally:
+        GPIO.cleanup()
 
 if __name__ == '__main__':
-    print()
-    #GPIO.cleanup()
+    motion_scanning()
+    #button_press()

@@ -32,3 +32,4 @@
 #POWER OFF - It's not "secure" but this deters opportunistic attacks (those from bots)
 
 #sudo wget https://github.com/ClassErased/Pi-Zero-Video-Doorbell/blob/main/_os_/motioncam.py
+#script will test the function of sensor, button and LED but is designed to be imported to main
